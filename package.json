@@ -1,30 +1,53 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "start-dev": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.0",
-    "concurrently": "^7.1.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
+    "@emotion/react": "^11.9.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
     "is-empty": "^1.2.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.10",
-    "nodemon": "^2.0.15",
-    "passport": "^0.5.2",
-    "passport-jwt": "^4.0.0",
-    "serve": "^13.0.2",
-    "validator": "^13.7.0"
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-file-base64": "^1.0.3",
+    "react-google-login": "^5.2.2",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start-dev": "react-scripts start",
+    "heroku-postbuild": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

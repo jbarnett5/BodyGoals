@@ -1,0 +1,10 @@
+export const CREATE = 'CREATE';
+export const UPDATE = 'UPDATE';
+export const DELETE = 'DELETE';
+export const FETCH_ALL = 'FETCH_ALL';
+export const LIKE = 'LIKE';
+export const LOGIN = 'LOGIN';
+export const REGISTER = 'REGISTER';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export const USER_LOADING = 'USER_LOADING';
+export const GET_ERRORS = 'GET_ERRORS'; 
